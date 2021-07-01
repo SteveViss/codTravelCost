@@ -1,0 +1,5 @@
+/renv
+/shp/*
+*.zip
+report.Rmd
+*.csv
