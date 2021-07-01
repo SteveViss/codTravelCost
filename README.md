@@ -1,6 +1,12 @@
+# Project structure
+
+- `distMatrix.R`: Main script
+- `ne_10m_land`: Inland polygons (from www.naturalearthdata.com)
+- `renv.lock`: All R dependancies
+
 # Method
 
-The _Gadus morhua_ travel distances among sampling stations were computed using the gdistance package. In order for the species to avoid inland areas and specific unsuitable habitat (such as Bras d'or Lake or and the Canso Canal), we articialy increase the cost of the transition matrix of those areas. The least-cost travel distances among stations were then found using a random walks algorithm (gdistance package). 
+The _Gadus morhua_ travel distances among sampling stations were computed using R (4.1.0) and the gdistance package (Van Etten 2017, v1.3-6). In order for the species to avoid inland areas and specific unsuitable habitat (such as Bras d'or Lake or and the Canso Canal), we articialy increase the cost of the transition matrix of those areas. The least-cost travel distances among stations were then found using a random walks algorithm (gdistance, Van Etten 2017, v1.3-6). 
 
 # Reference
 
